@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .encabezado{
+            height: 15%;
+            text-align: center;
+            background-color: green;
+            color: black;
+        }
+        #medio{
+            height: 75%;
+        }
+        #columna1{
+            height: 75%;
+            width: 20%;
+            border: solid;
+            column-gap:normal;
+            background-color: red;
+        }
+        #columna2{
+            height: 75%;
+            width: 20%;
+            border: solid;
+            column-gap:normal;
+            background-color: yellow;
+        }
+        .pie{
+            height: 10%;
+            text-align: center;
+            background-color: blue;
+            color: black;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            text-align: center;
+            background-color: red;
+            }
+
+            /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear:both;
+            }
+
+        </style>
+    <header class="encabezado">
+        <p><h1>encabezado</h1></p>
+    </header>
+
+    <main id="medio">
+        <div class="row">
+            <div class="column">
+                hola
+            </div>
+            <div class="column">
+                buenas
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <p>pie de pagina</p>
+    </footer>
+</body>
+</html>
