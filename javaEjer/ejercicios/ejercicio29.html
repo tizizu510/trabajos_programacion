@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 29</title>
+</head>
+<body>
+
+</body>
+<script>
+function buscarPalabraMasLarga(frase) {
+    let palabras = frase.split(' ');
+
+    let palabraMasLarga = palabras.reduce((masLarga, palabraActual) => {
+        return palabraActual.length > masLarga.length ? palabraActual : masLarga;
+    }, "");
+
+    return palabraMasLarga;
+}
+
+let x = "Tutorial de desarrollo web";
+document.write(buscarPalabraMasLarga(x));
+
+</script>
+</html>

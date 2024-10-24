@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+let frase = prompt("Ingresa una frase:");
+let contadorA=0;
+let contadorE=0;
+let contadorI=0;
+let contadorO=0;
+let contadorU=0;
+
+for (let i = 0; i < frase.length; i++) {
+    let letra = frase[i].toLowerCase();
+    switch (letra) {
+        case 'a':
+            contadorA++;
+            break;
+        case 'e':
+            contadorE++;
+            break;
+        case 'i':
+            contadorI++;
+            break;
+        case 'o':
+            contadorO++;
+            break;
+        case "u":
+            contadorU++
+            break;
+        default:
+            break;
+    }
+}
+document.write("Las 'a' que aparecen son "+ contadorA +"<br>" +"Las 'e' que aparecen son " + contadorE +"<br>"+ "Las 'i' que aparecen son "+ contadorI +"<br>" +"Las 'o' que aparecen son " + contadorO +"<br>"+ "Las 'u' que aparecen son "+ contadorU +"<br>" );
+
+</script>
+</html>

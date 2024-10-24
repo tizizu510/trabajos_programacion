@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+</head>
+<body>
+
+</body>
+<script>
+    function Posicion(array, index) {
+    if (index >= 0 && index < array.length) {
+        document.write(array[index]);
+    } else {
+        document.write("Posicion inexistente");
+    }
+}
+
+let array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+let index = prompt('ingrese el indice: ')
+Posicion(array, index);
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21 y 22</title>
+</head>
+<body>
+
+</body>
+<script>
+    function Menor(menor, i){
+        for(i;i < array.length; i++){
+        if(menor < array[i]){
+            menor = menor;
+        }else{
+            menor = array[i];
+        }
+    }
+    document.write('El numero menor es ', menor,"<br>");
+    }
+    function Mayor(mayor, i){
+        for(i;i < array.length; i++){
+        if(mayor > array[i]){
+            mayor = mayor;
+        }else{
+            mayor = array[i]
+        }
+    }
+    document.write('El numero mayor es ',mayor);
+    }
+    let array = [25, 22, 43, 10, 12, 35];
+    let i = 0;
+    let menor = array[i];
+    let mayor = array[i];
+    Menor(menor);
+    Mayor(mayor);
+
+</script>
+</html>

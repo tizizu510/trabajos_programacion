@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 28</title>
+</head>
+<body>
+
+</body>
+<script>
+    function mayuscula(x){
+        let y = x.split(' ').map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(' ');
+        return y;
+    }
+    let x = 'prince of persia';
+    document.write(mayuscula(x));
+</script>
+</html>

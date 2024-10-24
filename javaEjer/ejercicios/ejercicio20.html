@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+<body>
+
+</body>
+<script>
+    let cantidadAlumnos = prompt('ingrese la cantidad de alumnos: ');
+    let edades = [];
+    let cont = 0;
+    let edad;
+
+
+    for(cont = 0;cont < cantidadAlumnos; cont++){
+        edad = prompt('ingrese la edad del alumno: ');
+        edades.push(edad)
+    }
+    cont = 0;
+
+    for(cont = 0;cont < edades.length; cont++){
+        if(edades[cont] % 2 == 0){
+        document.write(edades[cont], "<br>");
+        }
+    }
+</script>
+</html>
